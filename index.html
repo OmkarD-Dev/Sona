@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>For My Love ❤️</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+  <!-- Lottie for cute animations -->
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <!-- Link external CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- floating hearts -->
+  <div class="heart" style="left: 10%; bottom: -20px; animation-delay: 0s;"></div>
+  <div class="heart" style="left: 30%; bottom: -40px; animation-delay: 3s; transform: scale(0.8) rotate(-45deg);"></div>
+  <div class="heart" style="left: 55%; bottom: -60px; animation-delay: 1.5s; transform: scale(1.1) rotate(-45deg);"></div>
+  <div class="heart" style="left: 80%; bottom: -30px; animation-delay: 4.5s; transform: scale(0.9) rotate(-45deg);"></div>
+
+  <header>
+    <div class="logo">
+      <svg viewBox="0 0 32 32">
+        <path fill="#ff4b6e" d="M16 29s-9.7-5.3-13-11.4C1.2 16.4 0 14.2 0 11.8 0 7.8 3.3 4.5 7.3 4.5c2.3 0 4.4 1.1 5.7 2.9C14.3 5.6 16.4 4.5 18.7 4.5 22.7 4.5 26 7.8 26 11.8c0 2.4-1.2 4.6-3 5.8C25.7 23.7 16 29 16 29z"></path>
+      </svg>
+      <!-- EDIT HERE: Your initials or couple name -->
+      <span>Yours Forever</span>
+    </div>
+    <nav>
+      <a onclick="scrollToSection('hero')">Home</a>
+      <a onclick="scrollToSection('memories')">Memories</a>
+      <a onclick="scrollToSection('reasons')">Why I Love You</a>
+      <a onclick="scrollToSection('message')">Message</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="hero">
+      <div class="hero-text">
+        <div class="hero-badge">
+          <span class="pulse-dot"></span>
+          <!-- EDIT HERE: A tiny tagline -->
+          <span>Sona: A website just for you and our wonderful Moments together. 💌</span>
+        </div>
+        <!-- EDIT HERE: Her name + line -->
+        <h1>
+          Hey <span class="name">Sona</span>,<br />
+          this is our little universe.
+        </h1>
+        <!-- EDIT HERE: Short subtitle -->
+        <p class="hero-subtitle">
+          Every animation, color, and pixel on this page is here for one reason: To celebrate and remind you are never alone and i am with you forever and always.
+        </p>
+        <!-- EDIT HERE: Romantic quote -->
+        <p class="hero-quote">
+          “In a world full of billions, my favorite notification will always be your smile.”
+        </p>
+
+        <div class="hero-actions">
+          <button class="btn-primary" onclick="openSurprise()">
+            Open your surprise 💝
+          </button>
+          <button class="btn-ghost" onclick="scrollToSection('memories')">
+            Revisit our memories ✨
+          </button>
+        </div>
+        <p class="hero-mini-text">
+          Scroll down, slowly, like how our story keeps unfolding—beautiful and soft.
+        </p>
+      </div>
+
+      <div class="hero-animation">
+        <div class="hero-card">
+          <div class="hero-card-top">
+            <!-- EDIT HERE: Important date -->
+            <div class="hero-card-title">Us, forever in progress</div>
+            <div class="hero-card-date">Since 24 • 12 • 2024</div>
+          </div>
+          <p class="hero-timeline">
+            That makes <span id="daysCounter">000</span> days of me being grateful for you.
+          </p>
+          <div class="hero-card-inner">
+            <div>
+              <!-- EDIT HERE: Very short message -->
+              <p class="hero-card-msg">
+                No matter how ordinary the day, it becomes special the moment you are in it.
+              </p>
+              <div class="hero-card-tag">
+                <span class="hero-card-tag-dot"></span>
+                <span>Today’s status: hopelessly in love</span>
+              </div>
+            </div>
+            <div class="hero-card-lottie">
+              <!-- Cute love animation (Lottie) -->
+              <div style="display: flex; justify-content: center; gap: 12px; margin: 20px 0;">
+              <!-- Your photo with heart frame -->
+              <div class="heart-frame">
+                <img src="Images\WhatsApp Image 2026-01-01 at 10.21.38 PM (2).jpeg" alt="You 💖" class="couple-img">
+              </div>
+              <!-- Her photo with heart frame -->
+              <div class="heart-frame">
+                <img src="Images\WhatsApp Image 2026-01-01 at 10.21.24 PM (1).jpeg" alt="Her 💖" class="couple-img">
+              </div>
+            </div>
+
+
+            </div>
+          </div>
+
+          <div class="hero-card-floating"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MEMORIES -->
+    <section id="memories">
+      <h2>Little snapshots of us</h2>
+      <p class="section-subtitle">
+        Just a few moments that live rent‑free in my heart every single day.
+      </p>
+
+      <div class="memories-grid">
+        <!-- EDIT HERE: Duplicate & personalize these cards -->
+        <div class="memory-card" onclick="flashLove(this)">
+          <div class="memory-pill">Chapter 1</div>
+          <div class="memory-title">The day we first met</div>
+          <p class="memory-text">
+            I still remember thinking, “Please let this moment last just a little bit longer.”
+          </p>
+          <div class="memory-date">That beautiful first hello.</div>
+          <div class="memory-heart"></div>
+        </div>
+
+        <div class="memory-card" onclick="flashLove(this)">
+          <div class="memory-pill">Chapter 2</div>
+          <div class="memory-title">Our favorite silly laugh</div>
+          <p class="memory-text">
+            The way you laugh at the most random things is the sound I never knew I needed.
+          </p>
+          <div class="memory-date">Countless times, still not enough.</div>
+          <div class="memory-heart"></div>
+        </div>
+
+        <div class="memory-card" onclick="flashLove(this)">
+          <div class="memory-pill">Chapter 3</div>
+          <div class="memory-title">Your sleepy “good night”</div>
+          <p class="memory-text">
+            Those soft, half‑asleep good nights are my favorite endings to every day.
+          </p>
+          <div class="memory-date">Every night, quietly perfect.</div>
+          <div class="memory-heart"></div>
+        </div>
+
+        <div class="memory-card" onclick="flashLove(this)">
+          <div class="memory-pill">Chapter 4</div>
+          <div class="memory-title">That one unforgettable date</div>
+          <p class="memory-text">
+            It wasn’t the place, the food, or the weather. It was just you.
+          </p>
+          <div class="memory-date">The kind I keep replaying.</div>
+          <div class="memory-heart"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LOVE METER + REASONS -->
+    <section id="reasons">
+      <h2>How much do I love you?</h2>
+      <p class="section-subtitle">
+        A totally scientific, absolutely accurate measurement, powered by my heart.
+      </p>
+
+      <div class="meter-wrapper">
+        <div class="meter-bar">
+          <div class="meter-fill" id="loveMeter"></div>
+        </div>
+        <div class="meter-label">Spoiler: It grows a little more every day.</div>
+        <div class="meter-emoji">💓</div>
+      </div>
+
+      <br /><br />
+
+      <h2>Reasons my heart chose you</h2>
+      <p class="section-subtitle">
+        A short list, because the full version would need an infinite scroll.
+      </p>
+
+      <div class="qa-grid">
+        <!-- EDIT HERE: Add your own reasons -->
+        <div class="qa-card">
+          <div class="qa-icon">⌵</div>
+          <div class="qa-question">You understand my silence.</div>
+          <div class="qa-answer">
+            You can read my mood from a single word, a pause, or even an emoji. And somehow, you always know what to say.
+          </div>
+        </div>
+
+        <div class="qa-card">
+          <div class="qa-icon">⌵</div>
+          <div class="qa-question">You make the smallest things magical.</div>
+          <div class="qa-answer">
+            A simple walk, a random snack, a shared meme—when it’s with you, it feels like a tiny celebration.
+          </div>
+        </div>
+
+        <div class="qa-card">
+          <div class="qa-icon">⌵</div>
+          <div class="qa-question">Your heart is my safe place.</div>
+          <div class="qa-answer">
+            No matter how loud the world gets, being with you feels calm, warm, and exactly where I want to be.
+          </div>
+        </div>
+
+        <div class="qa-card">
+          <div class="qa-icon">⌵</div>
+          <div class="qa-question">You are my favorite future.</div>
+          <div class="qa-answer">
+            When I imagine tomorrow, next year, or forever, the only constant I see is you, standing right there beside me.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MESSAGE -->
+    <section id="message">
+      <h2>A small message for you</h2>
+      <p class="section-subtitle">
+        Type your name below and let this page whisper something just for you.
+      </p>
+
+      <div class="meter-wrapper">
+        <input
+          id="nameInput"
+          type="text"
+          placeholder="Type your beautiful name here..."
+        />
+        <br /><br />
+        <button class="btn-primary" onclick="showPersonalMessage()">
+          Show my secret message ✨
+        </button>
+        <p id="personalMessage"></p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    Crafted with <span>infinite love</span> and a little bit of code, just for you.
+  </footer>
+
+  <!-- Surprise popup -->
+  <div class="overlay" id="overlay">
+    <div class="popup">
+      <div class="popup-ribbon"></div>
+      <!-- EDIT HERE: Main surprise message -->
+      <h3>Plot twist: You’re my forever.</h3>
+      <p>
+        No matter where life takes us, one thing will always stay the same: my heart will always, always, always choose you.
+      </p>
+      <lottie-player
+        src="https://lottie.host/cae40d2f-a86f-4fe1-bd77-92ffc8db15e2/KjD8lxtbVj.json"
+        background="transparent"
+        speed="1"
+        style="width: 180px; height: 180px; margin: 0 auto;"
+        loop
+        autoplay
+      ></lottie-player>
+      <button class="btn-primary" onclick="closeSurprise()">Close, but keep smiling 💖</button>
+    </div>
+  </div>
+
+  <!-- Link external JS -->
+  <script src="script.js"></script>
+</body>
+</html>
